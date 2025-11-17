@@ -1,0 +1,19 @@
+{
+  "name": "bactwin-backend",
+  "version": "0.0.8",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "bacstack": "^0.0.1-beta.14",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-bacnet": "^0.2.4",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.6",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
