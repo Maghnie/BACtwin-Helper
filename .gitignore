@@ -49,3 +49,6 @@ coverage/
 *.tmp
 *.temp
 .cache/
+
+# Re-include files for demo 
+!demo-utils/

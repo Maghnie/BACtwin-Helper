@@ -4,24 +4,28 @@ Vite + React Frontend und Express + SQLite Backend zur maschinellen Darstellung 
 
 Hintergrundinformation sind unter https://www.amev-online.de/AMEVInhalt/Planen/Gebaeudeautomation/BACtwin/ zu finden. 
 
-## Installation
+## Installation (Lokal)
 
 Dieses System wurde auf einem virtuellen Lubuntu Server erstellt und getestet und basiert auf nodejs und npm. Diese müssen installiert sein.
 
 ### Backend starten
 ```bash
 cd backend
-npm install express sqlite3 sqlight
-npm install archiver
-npm install swagger-ui-express swagger-jsdoc
+
+npm install 
+
+# Optional: Datenbank mit Beispieldaten nur zum Testen gefüllen 
+sqlite3 data.db < demo-utils/example_data.sql
+
 npm start
 ```
+
 -> Läuft auf http://localhost:4000
 
 ### Frontend starten
 ```bash
 cd frontend
-npm install lucide-react
+npm install
 npm run dev
 ```
 -> Läuft auf http://localhost:5173
