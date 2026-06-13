@@ -1,4 +1,4 @@
-# BACtwin
+# BACtwin Helper
 
 Vite + React Frontend und Express + SQLite Backend zur maschinellen Darstellung der BACtwin BAS und Object-Templates sowie der BACtwin Profile. 
 
