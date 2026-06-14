@@ -1,0 +1,54 @@
+# Dependencies (always excluded - see package-lock.json for version tracking)
+node_modules/
+
+# Build outputs (generated code, not source)
+dist/
+build/
+.vite/
+
+# Environment variables (contains secrets - NEVER commit!)
+.env
+.env.local
+.env.*.local
+.env.production
+
+# Database files (user data and local development)
+backups/
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+
+# Logs (noisy and auto-generated)
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS junk files (leave these out of code reviews)
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE/editor files (team-specific, not project-wide)
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# Testing coverage (generated reports)
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Re-include files for demo 
+!demo-utils/
