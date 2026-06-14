@@ -8,7 +8,10 @@ export default defineConfig({
     //host: "amevbactwin.local", // oder "192.168.0.42"
     host: "192.168.0.178", // oder "192.168.0.42"
     port: 5173,       // optional: Port festlegen    
-    allowedHosts: ["amevbacnet"] // <— hier dein Hostname eintragen
+    allowedHosts: [
+      "amevbacnet",
+      "bactwin-helper-frontend.onrender.com"
+    ] // hier dein Hostname eintragen
   }
 })
 
