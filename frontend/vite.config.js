@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react"
 
 export default defineConfig({
   plugins: [react()],
+  base: process.env.NODE_ENV === 'production' ? `/BACtwin-Helper/` : '/', // Basis-URL für die Produktion festlegen
   server: {
     //host: "0.0.0.0", // erlaubt Verbindungen von anderen Geräten im Netzwerk
     //host: "amevbactwin.local", // oder "192.168.0.42"
