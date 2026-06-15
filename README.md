@@ -4,6 +4,16 @@ Vite + React Frontend und Express + SQLite Backend zur maschinellen Darstellung 
 
 Hintergrundinformation sind unter https://www.amev-online.de/AMEVInhalt/Planen/Gebaeudeautomation/BACtwin/ zu finden. 
 
+## 🚀 Live Demo
+
+- **[Backend-Server - API Dokumentation](https://bactwin-helper-backend.onrender.com)**  
+- **[Frontend - GUI](https://maghnie.github.io/BACtwin-Helper/)**
+
+> ⚠️ **Hinweise zur live Demo**
+> - Der Backend-Server (gehostet auf Render.com, Free Tier) muss ggf. erst durch einen Aufruf aktiviert werden. Danach läuft die Frontend-Anwendung wie gewohnt.
+> - Daten sind nicht persistent – diese Demo dient nur zur Vorschau. Sicherheits- und Zuverlässigkeitsmaßnahmen sind nicht umgesetzt.
+
+
 ## Installation (Lokal)
 
 Dieses System wurde auf einem virtuellen Lubuntu Server erstellt und getestet und basiert auf nodejs und npm. Diese müssen installiert sein.
