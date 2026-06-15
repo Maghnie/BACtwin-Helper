@@ -6,6 +6,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import swaggerUi from "swagger-ui-express";
 import swaggerJSDoc from "swagger-jsdoc";
+import { corsOptions } from './corsConfig.js';
 import ontology from "./ontology.js";
 import backupRouter from "./backup.js";
 
@@ -17,7 +18,8 @@ const __dirname = path.dirname(__filename);
 const MAX_BACKUPS = 3;
 
 const app = express();
-app.use(cors());
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use("/ontology", ontology);
 app.use("/backup", backupRouter);
