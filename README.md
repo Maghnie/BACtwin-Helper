@@ -4,6 +4,8 @@ Vite + React Frontend und Express + SQLite Backend zur maschinellen Darstellung 
 
 Hintergrundinformation sind unter https://www.amev-online.de/AMEVInhalt/Planen/Gebaeudeautomation/BACtwin/ zu finden. 
 
+Fragen zum Code? --> [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Maghnie/BACtwin-Helper)
+
 ## 🚀 Live Demo
 
 - **[Backend-Server - API Dokumentation](https://bactwin-helper-backend.onrender.com)**  
