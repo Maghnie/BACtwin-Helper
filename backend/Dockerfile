@@ -1,6 +1,6 @@
 FROM node:18-slim
 
-# Install system dependencies for compiling native modules
+# Install build tools for native modules
 RUN apt-get update && apt-get install -y \
     build-essential \
     python3 \
@@ -10,16 +10,19 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-# Copy package files
+# Copy only package files first (better layer caching)
 COPY package*.json ./
 
-# Install dependencies, forcing sqlite3 to build from source
+# Remove any potential node_modules from host (safety)
+RUN rm -rf node_modules
+
+# Install dependencies and force rebuild of native modules
 RUN npm install --build-from-source
 
-# Optional: verify sqlite3 is rebuilt
+# Optional: explicitly rebuild sqlite3
 RUN npm rebuild sqlite3 --build-from-source
 
-# Copy rest of the backend code
+# Copy the rest of the code
 COPY . .
 
 EXPOSE 4000
