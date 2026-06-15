@@ -1,8 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { X } from "lucide-react"; // modern, leichtes Icon
-
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:4000";
+import { API_URL } from '../config';
 
 export default function LookupSearch() {
   const [kuerzel, setKuerzel] = useState("");

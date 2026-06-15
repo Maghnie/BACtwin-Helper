@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import axios from "axios";
-
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:4000";
+import { API_URL } from '../config';
 
 // ✅ Spaltenfarben – aktuell für Object_Name & Description
 const COLUMN_COLORS = {
